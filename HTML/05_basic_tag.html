@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <marquee direction="left">This is sale today</marquee>
+    <marquee direction="right">This is sale today</marquee>
+    <marquee direction="up">This is sale today</marquee>
+    <marquee direction="down">This is sale today</marquee>
+
+    <!-- 1) block inner inline use // yes 
+    2) inline tag inner inline user // yes 
+    3)  block inner block // yes 
+    4) inline tag inner block // yes realtime no -->
+
+
+    <!-- block inner inline use // yes -->
+    <div>
+        Lorem ipsum, <b>dolor sit amet</b> consectetur adipisicing elit. Quae placeat vero iure ea assumenda et! Odio
+        commodi
+        mollitia dignissimos <i>accusantium tenetur</i> necessitatibus ipsum, cum laudantium, porro deleniti aspernatur
+        quisquam consectetur!
+
+    </div>
+
+    <!-- inline tag inner inline user // yes  -->
+    <span>this <b>is span</b> tag</span>
+
+    <!-- block inner block // yes  -->
+    <div>
+        this is div tag
+        <h1>Hello h1 tag</h1>
+        <p>This para tag</p>
+    </div>
+
+    <!-- void elememt :- self closing / end tag -->
+
+    <br>
+    <hr>
+    <!-- inline tag inner block // yes realtime no -->
+    <span>
+        this span tag here
+        <h1>Hello this tag data</h1>
+    </span>
+
+
+
+</body>
+
+</html>
