@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- pattern :- char , number ,symbol -->
+
+
+    <table align="center">
+        <caption>
+            <h4>Form data</h4>
+        </caption>
+        <form action="">
+            <tr>
+                <td><label for="">Enter your name</label></td>
+                <!-- <td><input type="text" placeholder="Enter your name" pattern="[A-Za-z]+" required></td> -->
+                <td><input type="text" placeholder="Enter your name" pattern="[A-Za-z]{4,10}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your Phone</label></td>
+                <!-- <td><input type="tel" placeholder="Enter your phone" pattern="[0-9]+" required></td> -->
+                <td><input type="tel" placeholder="Enter your phone" maxlength="10" pattern="[6789][0-9]{9}" required>
+                </td>
+            </tr>
+            <tr>
+                <!-- shubhamjadav23@gmail.com -->
+                 `
+                <td><label for="">Enter your Email</label></td>
+                <td><input type="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Enter your Password</label></td>
+                <td><input type="password" title="Pls password" placeholder="Enter your password" maxlength="10"
+                        required pattern="[A-Z][A-Za-z0-9]{6,10}">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Quntiy</label></td>
+                <td><input type="number" min="1" max="6"  required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
