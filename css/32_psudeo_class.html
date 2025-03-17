@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            background-color: red;
+        }
+        ul li:last-child{
+            background-color: aqua;
+        }
+        ul li:nth-child(3){
+            background-color: lawngreen;
+        }
+        ul li:nth-last-child(2){
+            background-color: rebeccapurple;
+        }
+        ul li:nth-child(even){
+            background-color: lawngreen;
+        }
+        ul li:nth-child(odd){
+            background-color: lightcoral;
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+        .main:hover{
+            background-color: lightcoral;
+            border-radius: 50%;
+            transform: translate(100px);
+     
+        }
+        input{
+            margin-top: 30px;
+            border: none;
+            border-radius: 10px;
+        }
+        input:focus{
+            background-color: aqua;
+            outline: 2px solid green;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- : class :- 
+    :: element :- new elemet -->
+
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+    </ul>
+
+    <div class="main">
+
+    </div>
+
+    <input type="text" placeholder="enter your name" name="" id="">
+</body>
+</html>

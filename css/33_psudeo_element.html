@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::first-letter {
+            background-color: red;
+        }
+        .main::first-line{
+            background-color: aqua;
+        }
+        .main::selection{
+            background-color: lightcoral;
+            color: white;
+        }
+        /* new element child */
+        ul li::before{
+            content: "S";
+            height: 200px;
+            width: 200px;
+        }
+        ul li::after{
+            content: "ja";
+        }
+    </style>
+</head>
+
+<body>
+    <!-- :: element -->
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>four</li>
+        <li>Five</li>
+        <li>Six</li>
+        <li>Seven</li>
+    </ul>
+
+    <div class="main">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, impedit. Accusantium atque omnis laborum, harum
+        velit vero? Dicta eveniet, reprehenderit at voluptates assumenda quasi similique aliquid magni commodi, possimus
+        repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minima totam, recusandae voluptatum
+        eligendi laborum officiis? Tempora autem officia modi reprehenderit, itaque accusantium debitis neque corrupti
+        laboriosam dolor expedita unde.
+    </div>
+</body>
+
+</html>
