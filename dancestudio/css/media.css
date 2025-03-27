@@ -1,0 +1,29 @@
+@media only screen and (max-width:1160px) {
+    
+}
+@media only screen and (max-width:992px) {
+    
+}
+/* tab */
+@media only screen and (max-width:768px) {
+    #Header{
+        background-size: cover;
+    }
+    .list{
+        display: none;
+    }
+    .icon .search{
+        display: none;
+    }
+    .icon .bar {
+        display: block;
+    }
+    .header-content .header-p,.header-h1{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:576px) {
+    .header-content .btn-header {
+        padding: 10px 30px;
+    }
+}
