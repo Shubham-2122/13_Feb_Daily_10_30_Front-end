@@ -49,7 +49,8 @@
     color: #716c53;
     font-weight: 700;
 }
-.icon .bar{
+
+.icon .bar {
     display: none;
 }
 
@@ -59,7 +60,8 @@
     padding: 50px 0;
     display: flex;
 }
-.header-content .col{
+
+.header-content .col {
     width: 50%;
     /* border: 2px solid; */
 }
@@ -67,25 +69,135 @@
 .header-content .header-h1 {
     width: 50%;
     /* font-size: 91px; */
-    font-size: clamp(20px,7.5vw,91px);
+    font-size: clamp(20px, 7.5vw, 91px);
     text-transform: uppercase;
     font-weight: 800;
 }
 
 .header-content .header-p {
     width: 60%;
-    font-size: clamp(16px,3.5vw,32px);
+    font-size: clamp(16px, 3.5vw, 32px);
     font-weight: 400;
     margin: 20px 0;
 }
 
 .header-content .btn-header {
-    font-size: clamp(16px,3vw,25px);
+    font-size: clamp(16px, 3vw, 25px);
     color: #ffffff;
     font-weight: 700;
     text-align: center;
     padding: 15px 50px;
     border-radius: 4px;
     border: none;
+    background-color: #716c53;
+}
+
+/* our start */
+#ourteam {
+    padding: 30px 0;
+    background-color: #eee2b5;
+}
+
+.bg-color {
+    padding: 20px 0;
+}
+
+.our-text {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.our-text .h2-our {
+    font-size: clamp(20px, 6.7vw, 64px);
+    text-transform: uppercase;
+    color: #716c53;
+    font-weight: 700;
+}
+
+.our-text .p-our {
+    font-size: clamp(16px, 3vw, 25px);
+    width: 50%;
+    margin: 20px auto;
+    color: #716c53;
+    font-weight: 400;
+}
+
+#ourteam .row {
+    display: flex;
+}
+
+#ourteam .row .col {
+    width: 33.33%;
+    /* border: 2px solid; */
+}
+
+.card-img {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.card-text .h4-card {
+    font-size: clamp(16px, 3.5vw, 33px);
+    text-transform: uppercase;
+    color: #716c53;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.card-text .p-card {
+    margin: 10px 0;
+    font-size: clamp(16px, 3vw, 25px);
+    color: #716c53;
+    font-weight: 600;
+    font-family: "Nunito";
+    text-align: center;
+}
+
+/* dance start*/
+#dance{
+    padding: 40px 0;
+}
+#dance .row {
+    display: flex;
+    align-items: center;
+}
+
+#dance .row .col {
+    width: 50%;
+}
+.dance-img{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dance-main {}
+
+
+.dance-main .h1-dance {
+    font-size: clamp(20px, 7.7vw, 75px);
+    text-transform: uppercase;
+    color: #716c53;
+    font-weight: 700;
+    font-family: "Montserrat";
+}
+
+.dance-main .p-dance {
+    font-size: clamp(16px, 3.5vw, 30px);
+    color: #716c53;
+    font-weight: 400;
+    font-family: "Nunito";
+    margin: 30px 0;
+}
+
+.dance-main .btn-dance {
+    font-size: clamp(16px, 3vw, 25px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 4px;
     background-color: #716c53;
 }

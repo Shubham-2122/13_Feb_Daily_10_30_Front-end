@@ -21,6 +21,28 @@
     .header-content .header-p,.header-h1{
         width: 100%;
     }
+    .our-text .p-our{
+        width: 90%;
+    }
+    #ourteam .row{
+        display: block;
+        /* flex-direction: column; */
+    }
+    #ourteam .row .col{
+        width: 100%;
+    }
+    #dance .row{
+        flex-direction: column;
+    } 
+    #dance .row .col{
+        width: 100%;
+    }
+    .dance-main .p-dance{
+        margin: 15px 0;
+    }
+    .dance-main {
+        text-align: center;
+    }
 }
 @media only screen and (max-width:576px) {
     .header-content .btn-header {
