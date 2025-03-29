@@ -26,7 +26,7 @@
     }
     #ourteam .row{
         display: block;
-        /* flex-direction: column; */
+     
     }
     #ourteam .row .col{
         width: 100%;
@@ -42,6 +42,26 @@
     }
     .dance-main {
         text-align: center;
+    }
+    #footer .row{
+        display: block;
+        text-align: center;
+    }
+    #footer .row .col-4{
+        width: 100%;
+    }
+    #footer .row .col-6{
+        width: 100%;
+    }
+    .footer-img {
+        margin: 0 auto;
+    }
+    
+    .p-footer {
+        width: 100%;
+    }
+    #footer .row .col-6 .col {
+        width: 100%;
     }
 }
 @media only screen and (max-width:576px) {

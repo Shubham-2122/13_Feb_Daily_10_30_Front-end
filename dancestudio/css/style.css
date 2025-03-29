@@ -155,9 +155,10 @@
 }
 
 /* dance start*/
-#dance{
+#dance {
     padding: 40px 0;
 }
+
 #dance .row {
     display: flex;
     align-items: center;
@@ -166,12 +167,13 @@
 #dance .row .col {
     width: 50%;
 }
-.dance-img{
+
+.dance-img {
     width: 60%;
     margin: 0 auto;
 }
 
-.dance-main {}
+
 
 
 .dance-main .h1-dance {
@@ -200,4 +202,71 @@
     padding: 15px 40px;
     border-radius: 4px;
     background-color: #716c53;
+}
+
+/* footer start */
+#footer {
+    background-color: #222222;
+    color: white;
+    padding: 50px 0;
+}
+
+#footer .row {
+    display: flex;
+}
+
+#footer .row .col-4 {
+    width: 40%;
+  
+}
+
+#footer .row .col-6 {
+    width: 60%;
+    
+}
+
+#footer .row .col-6 .col {
+    width: 33.33%;
+}
+
+.h2-footer {
+    font-size: clamp(18px, 3.5vw, 31px);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Nunito";
+}
+
+.footer-img {
+    width: 170px;
+}
+
+.p-footer {
+    width: 80%;
+    margin: 20px 0;
+    font-size: clamp(16px, 3vw, 25px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+}
+
+.ul-footer {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.ul-footer .li-footer {
+    margin: 10px 0;
+}
+
+.ul-footer .li-footer .a-footer {
+    font-size: clamp(16px, 3vw, 25px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+    text-decoration: none;
+}
+
+.footer-icon i {
+    font-size: clamp(16px, 3vw, 25px);
+    margin-right: 10px;
 }
