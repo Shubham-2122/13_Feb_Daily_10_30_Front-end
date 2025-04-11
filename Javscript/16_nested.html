@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- nested codition  -->
+    <!-- for(){
+        for(){
+
+        }
+        for(){
+
+        }
+    } -->
+
+    <script>
+
+        // for(let r=1;r<=5;r++){
+        //     // console.log("*")
+        //     // document.writeln("*","<br>")
+        //     for(let c=1;c<=5;c++){
+        //         console.log("*")
+        //         document.writeln("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // for(let r=1;r<=5;r++){
+        //     for(let c=1;c<=r;c++){
+        //         document.writeln("*")
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        for(let r = 5;r>=1;r--){
+            for(let c=1;c<=r;c++){
+                document.writeln("*")
+            }
+            document.writeln("<br>")
+        }
+
+        
+
+        for(let r = 5;r>=1;r--){
+            for(let c=1;c<=r;c++){
+                document.writeln(r)
+            }
+            document.writeln("<br>")
+        }
+
+
+        for(let i=1 ; i<=10 ; i++){
+            // console.log(i)
+            // if(i <= 5){
+            //     console.log(i)
+            // }
+            if(i % 2 == 0){
+                console.log("even",i)
+            }
+        }
+    </script>
+</body>
+</html>
