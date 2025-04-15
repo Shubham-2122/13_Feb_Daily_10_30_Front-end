@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" onkeypress="clone()" placeholder="Enter your data" id="inp"> -->
+    <input type="text" onkeyup="clone()" placeholder="Enter your data" id="inp">
+    <textarea name="" id="text" cols="30" rows="10"></textarea> 
+    <br>
+    <br>
+    <button onclick="clone()">add data</button>
+
+    <script>
+
+    let inpu = document.getElementById("inp")
+    let text = document.getElementById("text")
+    
+    function clone(){
+        text.innerHTML = inpu.value
+    }
+
+    </script>
+</body>
+</html>
