@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div>
+            <input type="text" placeholder="Enter your name" onblur="validate(nm,nmerr)" name="" id="nm">
+            <span id="nmerr"></span>
+        </div>
+        <div>
+            <input type="email" placeholder="Enter your email"  onblur="validate(email,emerr)" name="" id="email">
+            <span id="emerr"></span>
+        </div>
+        <div>
+            <input type="tel" placeholder="Enter your phone" name="" onblur="validate(phone,pherr)" id="phone">
+            <span id="pherr"></span>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your password" onblur="validate(psw,pswerr)" name="" id="psw">
+            <span id="pswerr"></span>
+        </div>
+       
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <script>
+
+        function validate(inp,err){
+            if(inp.value == "" || inp.value == null){
+                err.innerHTML = "<b>pls required..!</b>";
+                err.style.color = "red"
+                inp.style.border = "2px solid red"
+                return false
+            }
+            else{
+                err.innerHTML = "";
+                inp.style.border = "2px solid green"
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
