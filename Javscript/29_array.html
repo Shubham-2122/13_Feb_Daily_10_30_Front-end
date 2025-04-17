@@ -19,16 +19,40 @@
 
         let arr = [1,2,3,"vivek","het",3.5,34,"pintu"]
         console.log(arr)
+        // value[index]
         console.log(arr[3])
         console.log(arr[5])
         // arr[index]
-        document.writeln(arr[5])
+        // document.writeln(arr[5])
         console.log(arr[7])
 
 
+        // document.write(arr)
 
-        // simple for
-        // for(let i=0;i<ar)
+        //1 simple for  
+        // console.log(arr.length)
+        // for(let i=0;i<arr.length;i++){
+        //     // console.log(i)
+        //     console.log(arr[i]) 
+        //     document.write(i,"values => ",arr[i],"<br>")  
+        // }
+
+        //2 for of :- values
+        // for(let data of arr){
+        //     // value print
+        //     console.log(data)
+        //     document.write(data,"<br>")
+        // }
+
+        //3 for in index, values
+        for(let index in arr){
+            // console.log(index)
+            console.log(arr[index])
+            document.write(index,"values =>",arr[index],"<br>")
+        }
+
+
+
 
     </script>
 </body>
