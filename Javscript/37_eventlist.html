@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="h1"></h1>
+
+    <button id="btn">change name</button>
+
+    <script>
+        let h1_tag = document.getElementById("h1")
+        let btn = document.getElementById("btn")
+
+        // function data(){
+        //     h1_tag.innerHTML = "<i>Hello this Addevent lister</i>"
+        // }
+
+        btn.addEventListener("click",function(){
+            h1_tag.innerHTML = "hello this javascript";
+        })   
+    </script>
+</body>
+</html>
