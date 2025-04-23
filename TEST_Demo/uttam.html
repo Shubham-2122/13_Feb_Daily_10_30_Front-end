@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #err{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    <!-- Events: Mouse, keyboard, form -->
+     <button onclick="print1()" ondblclick="print2()" onmouseenter="hoverin()" onmouseleave="hoverout()" class="btn1">Click me!</button>
+
+     <input onkeyup="logkey()" type="text">
+
+     <form action="" onsubmit="return validate()">
+
+        <input id="inp" type="text" placeholder="Enter your name">
+        <span id="err">This cannot be empty</span>
+        <button onclick="validate()">Submit</button>
+
+
+     </form>
+
+
+     <script>
+
+        function print1(){
+            console.log("Button is clicked")
+        }
+
+        function print2(){
+            console.log("Button is double clicked")
+        }
+
+        function hoverin(){
+            // console.log("Button is hovered in")
+            // document.write("Button is hovered in")
+        }
+
+        function hoverout(){
+            // console.log("Button is hovered out")
+            // document.write("Button is hovered out")
+        }
+
+        // keyboard event
+        function logkey(){
+            console.log("You pressed a key")
+        }
+
+        function validate()
+        {
+            let inp = document.getElementById("inp")
+            if(inp.value == "" || inp.value == null){
+                document.getElementById("err").style.display = "inline"
+                return false
+            }
+            else{
+                return true;
+            }
+
+
+        }
+
+        //form event
+
+     </script>
+
+</body>
+</html>

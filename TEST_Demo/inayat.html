@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    object : Key-value {}
+    diffrences between objectv and array : In array the value is in indeces and in object - it's stored in keys as
+    string
+    -->
+
+    <!-- Syntax:
+     let object ={     kys : value }
+ -->
+    <script>
+        let car = {
+            name : "BMW",
+            year: 2021,
+            color: "blue"
+        }
+
+        // console.log(car)
+        car.color = "red"
+        console.log(car.color)
+
+        // for in
+        for (let data in car){
+            console.log(data)
+            console.log(car[data])
+            document.writeln(data,"value =", car[data], "<br>")
+        }
+    </script>
+</body>
+</html>
