@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let arr = [1, 2, 3, 4, 5]
+        let arr1 = [6, 7, 8, 9, 10]
+
+        console.log(arr.length)
+
+        // merge array
+        let result = arr.concat(arr1)
+
+        console.log(result)
+
+
+        //    array data add
+        // affter add
+        console.log(arr)
+        arr.push(8)
+        arr.push(9)
+        console.log(arr)
+
+        // pop data remove
+
+        arr.pop()
+        arr.pop()
+        console.log(arr)
+
+        // unshift before add
+        arr.unshift(0)
+        console.log(arr)
+
+        // shift before remove 
+        arr.shift()
+        console.log(arr)
+
+
+        let data = ["shubham", "Manav", "Manan", "uttam", "aachal","Brijesh"]
+
+        console.log(data)
+
+        // start 2
+        // console.log(data.slice(2))
+
+        // console.log(data.slice(0,3))
+        let data1 = data.slice(1, 4)
+
+        console.log(data1)
+
+        console.log(data)
+
+
+        // forEach 
+        data.forEach((value,index)=>{
+            console.log(value)
+            console.log(index)
+        })
+
+        // console.log(arr[2])
+
+        const result1 = data.filter((word) => word.length > 5)
+        console.log(result1)
+        
+        console.log(arr.reverse())
+
+    </script>
+</body>
+
+</html>
