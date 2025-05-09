@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <!-- constructor comana data value this keyword -->
+
+ <script>
+
+        class Arith{
+            constructor(a,b){
+                this.a = a;
+                this.b = b;
+                console.log("a =>",this.a)
+                console.log("b =>",this.b)
+            }
+            x = function sum(){
+                
+                console.log("sun =>",this.a + this.b)
+                document.writeln(`sum => ${this.a + this.b}<br>`)
+            }
+            y = function sub(){
+                console.log("sub =>",this.a - this.b)
+                document.writeln(`sub => ${this.a - this.b}<br>`)
+            }
+            z = function mul(){
+                console.log("mul =>",this.a * this.b)
+                document.writeln(`mul => ${this.a * this.b}<br>`)
+            }
+        }
+
+        let data = new Arith(30,20)
+        data.x()
+        data.y()
+        data.z()
+
+        let data1 = new Arith(40,20)
+        data1.x()
+        data1.z()
+
+    </script>
+</body>
+</html>

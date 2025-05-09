@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inhritance :- one property to another proerty access  -->
+    <!-- class one to another class -->
+
+    <!-- type :-
+        1) single in : - A - B  
+        2) muti level :- A - B - C 
+        3) mutiple  inr :- A - C  , B - C :-not possible
+        4) hirchical :- A - B , A - C
+        5) hybriad :- any two inriance combine 
+
+    -->
+
+    <script>
+
+        // singel inritance :- A - B
+
+        class A {
+            x = function data() {
+                console.log("A class...")
+            }
+        }
+        class B extends A {
+            y = function data1() {
+                console.log("B class...")
+            }
+        }
+
+        let ob = new B 
+        ob.y()
+        ob.x()
+
+
+    </script>
+
+</body>
+
+</html>
