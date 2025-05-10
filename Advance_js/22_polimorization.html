@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method overloading(compile time) :- class have only function name same but deffernt para /    -->
+    <!-- method oriding(run time ) :-  function name same and class deffernt method oririonh -->
+
+    <script>
+        // class xyz {
+        //     data(a){
+        //         console.log("a name =>",a)
+        //     }
+        //     data(a,b){
+        //         console.log("sum =>",a+b)
+        //     }
+        // }
+        // let ob = new xyz
+        // console.log(ob)
+        // ob.data(20,2)
+
+
+        // method orrding 
+        class A {
+            data(){
+                console.log("A class...")
+            }
+        }
+        class B extends A {
+            data(){
+                console.log("B class...")
+            }
+        }
+        class C extends B{
+            data(){
+                console.log("C class...")
+            }
+        }
+
+        // let ob = new C 
+        // console.log(ob)
+        // ob.data()
+        // ob.data()
+
+        // arr count
+        let arr = [new A,new B,new C]
+        console.log(arr)
+        arr.forEach((value)=>{
+            value.data()
+        })
+
+    </script>
+</body>
+</html>

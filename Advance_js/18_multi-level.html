@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- A-B-c  -->
+    <script>
+
+        class A{
+            x = function data(){
+                console.log("A class Called...")
+            }
+        }
+        class B extends A{
+            y = function data1(){
+                console.log("B class Called...")                
+            }
+        }
+        class C extends B{
+            z = function data2(){
+                console.log("C class Called...")                
+            }
+        }
+
+        let ob = new C 
+        ob.x()
+        ob.z()
+        ob.y()
+
+    </script>
+</body>
+</html>
