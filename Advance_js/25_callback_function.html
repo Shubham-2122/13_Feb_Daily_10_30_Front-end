@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- callback :- outer function call inner function -->
+
+    <script>
+        // setInterval(()=>{
+        //     console.log("hello")
+        // },2000)
+
+        // outter function
+        function result(){
+            console.log(test(20,10))
+        }
+
+        // inner function
+        function test(a,b){
+            let data = a + b
+            return data
+        }
+
+        result()
+
+    </script>
+</body>
+</html>

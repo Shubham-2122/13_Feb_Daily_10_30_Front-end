@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- ...   ,  ...  -->
+
+        <!-- ...rest :- function as paramter store   -->
+        <!-- ...spred :- arry/ object store   -->
+
+        <!-- rest :- store value in paramter in function -->
+
+        <script>
+
+            function test(...data){
+                let sum = 0 
+                for(let index in data){
+                    // 0 += value
+                    sum = sum + data[index]
+                }
+                return sum
+            }
+
+            console.log(test(1,2,3,4,5,6,7,8,9,10))
+
+        </script>
+</body>
+</html>

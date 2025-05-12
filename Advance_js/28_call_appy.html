@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let data = {
+            fullname: function (city, state) {
+                console.log("firstname =>", this.firstname, " lastname =>", this.lastname, " city =>", city, " state =>", state)
+            }
+        }
+
+        let person = {
+            firstname: "Het",
+            lastname: "patel"
+        }
+
+        let person2 = {
+            firstname : "inayat",
+            lastname : "parmar"
+        }
+
+        // call method spratate parater/agru call
+        data.fullname.call(person,"ahmedabad","Gujarat")
+
+        // apply method array paramter 
+        data.fullname.apply(person2,["surat","gujarat"])
+
+
+
+
+    </script>
+</body>
+
+</html>
