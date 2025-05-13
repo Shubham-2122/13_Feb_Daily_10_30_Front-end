@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch :- it promise / object /  -->
+
+    <!-- fetch("location",{
+        method:"GET"
+    })
+    .then(()=>{data text format string})
+    .then(()=>{data print}) -->
+
+    <h1 id="h1"></h1>
+    <button onclick="data()">data</button>
+
+    <script>
+        // console.log(fetch())
+
+
+
+      function data(){
+          fetch("data.txt",{
+            method:"GET"
+        })
+        .then((res)=>{
+            // console.log(res)
+            // formate convert text file string data
+            return res.text()
+        })
+        .then((res)=>{
+            console.log(res)
+            // document.write(res)
+            document.getElementById("h1").innerHTML = res
+        })
+      }
+
+
+    </script>
+</body>
+</html>

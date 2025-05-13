@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- promise :-  object blue print of object   -->
+
+    <!-- resolve and reject -->
+
+    <!-- state  :- api
+
+        1) pending :-  hold data
+        2) fullfiled :- completed state
+        3) reject :- reject(remove) state
+    
+    -->
+
+    <!-- syntax ;- 
+    let p = new Promise(function(res,reject){
+        ...code
+    }) -->
+
+
+    <script>
+        let p = new Promise(function(res,rej){
+            
+            // codition true resolve
+            let x = 10
+            if(x == 11){
+               res("resolve data..!")
+            }
+            else{
+                rej("Api not Found..!")
+            }
+        })
+
+        // 1) pending state
+        console.log(p)
+    </script>
+
+</body>
+</html>

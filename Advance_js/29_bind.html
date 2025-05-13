@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // bind method  ad object 
+        let data = {
+            fullname: function () {
+                console.log("firstname =>", this.firstname, " lastname =>", this.lastname)
+            }
+        }
+
+        let person = {
+            firstname : "yug",
+            lastname : "patel"
+        }
+
+        // method as object 
+        let ob = data.fullname.bind(person)
+        ob()
+    </script>
+</body>
+
+</html>
