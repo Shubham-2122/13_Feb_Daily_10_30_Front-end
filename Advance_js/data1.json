@@ -1,0 +1,56 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "shubham",
+            "course": "MERN-stack"
+        },
+        {
+            "id": 2,
+            "name": "jiger sir",
+            "course": "Software"
+        },
+        {
+            "id": 3,
+            "name": "Rahul sir",
+            "course": "Full-stack"
+        },
+         {
+            "id": 4,
+            "name": "Rajesh sir",
+            "course": "hardware"
+        }
+    ],
+    "admin":[
+        {
+            "id":1,
+            "name" : "Admin",
+            "email":"Admin@gamil.com"
+        },
+        {
+            "id":2,
+            "name" : "Admin2",
+            "email":"Admin2@gamil.com"
+        }
+    ],
+    "product":[
+        {
+            "id":1,
+            "name":"Phone",
+            "productname":"iphone",
+            "price": 2000
+        },
+        {
+            "id":2,
+            "name":"Phone",
+            "productname":"iphone 15",
+            "price": 4000
+        },
+        {
+            "id":3,
+            "name":"Phone",
+            "productname":"oneplus",
+            "price": 1000
+        }
+    ]
+}

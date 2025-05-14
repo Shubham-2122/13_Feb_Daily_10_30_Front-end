@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- json :- javscript object notation 
+    Read data 
+
+    json :- lighweight base 
+    json :- easy read and write 
+
+    json string object/array 
+
+    json direct not use javscript  -->
+
+
+    <!-- let obj = [
+    {
+    id : 1,
+    name : "uttam",
+    course : "front-end"
+    }
+    ]
+
+    let json = [
+    {
+    "id" : 1,
+    "name" : "Uttam",
+    "course" : "Front-end"
+    }
+    ] -->
+
+    <script>
+
+        let json = `[
+            {
+                "id" : 1,
+                "name" : "Uttam",
+                "course" : "Fron-end"
+            },
+            {
+                 "id" : 2,
+                "name" : "Pintu",
+                "course" : "Back-end"
+            },
+            {
+                "id" : 3,
+                "name" : "manav",
+                "course" : "Full-stack"
+            }
+        ]`;
+
+
+        console.log(json)
+        // javscript not read json
+        // document.write(json)
+
+        // method format json convert object/array 
+        let data = JSON.parse(json)
+        console.log(data)
+
+        for(let user of data){
+            console.log(user)
+            document.write(`<h2> ID :- ${user.id} name :- ${user.name} course :- ${user.course}</h2>`)
+        }
+
+
+        let object = [
+            
+            {
+                id : 1,
+                name : "Het",
+                course : "Fron-end"
+            },
+            {
+                id : 2,
+                name : "Shubham1",
+                course : "Back-end"
+            },
+            {
+                id : 3,
+                name : "sujal",
+                course : "Full-stack"
+            } 
+            
+        ]
+
+        console.log(object)
+
+        let jsondata = JSON.stringify(object)
+
+        console.log(jsondata)
+
+    </script>
+
+
+</body>
+
+</html>

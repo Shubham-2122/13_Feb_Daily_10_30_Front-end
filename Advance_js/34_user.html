@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch -->
+
+
+    <script>
+
+        fetch("data.json",{
+            method:"GET"
+        })
+        .then((res)=>{
+            // json convert array
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            // console.log(data[0].name)
+            for(let user in data){
+                let user1 = data[user]
+                // console.log(data[user])
+                document.write(`<h2>id :- ${user1.id} name :- ${user1.name} course :- ${user1.course}</h2>`)
+            }
+        })
+
+    </script>
+</body>
+</html>
