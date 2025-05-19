@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Api data
+        function add(a,b){
+            setTimeout(()=>{
+                 console.log("sum =>",a+b)
+            },3000)
+        }
+
+        async function test() {
+            console.log(1)
+            console.log(2)
+            let res = await add(30,20)
+            // console.log(res)
+            console.log(3)
+            console.log(4)
+        }
+        test()
+
+    </script>
+</body>
+</html>
