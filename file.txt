@@ -30,5 +30,24 @@ cmd :- npx create-react-app appname
 cmd :- cd appname
 cmd :- npm start
 
-vite+react :- 
+floder stru
+1) node module :- npm install
+2) public :- index.html :- extra file not use
+	Assest : photo
+3) src :- index.js -> App.js
+4) package-lock.json , package.json
+
+
+vite+react :- Frmework
+npm create vite@latest app-name
+cd app-name 
+npm install
+npm run dev
+
+1) node module :- npm install
+2) public :- index.html :- extra file not use
+	Assest : photo
+3) src :- main.jsx -> App.jsx
+4) package-lock.json , package.json
+
 
