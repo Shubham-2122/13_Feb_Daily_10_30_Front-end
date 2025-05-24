@@ -5,10 +5,14 @@
 import React from "react";
 
 function Funcompo() {
+    
+    let name = 'asdhj'
+    console.log(name)
     return (
         <div>
             <h1>hello this Function component</h1>
             <h1>hello sdhnihn</h1>
+            {name}
         </div>
     )
 }
