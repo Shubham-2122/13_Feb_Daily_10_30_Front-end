@@ -12,8 +12,8 @@ function Css() {
         <div>
             <h1>hello css</h1>
             {/* 1) inline
-      2) internal :- not work
-      3) external :- imoport and file path */}
+            2) internal :- not work
+            3) external :- imoport and file path */}
 
 
             {/* inline css as object means key and value */}

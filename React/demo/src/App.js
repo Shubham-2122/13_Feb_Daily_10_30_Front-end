@@ -1,5 +1,6 @@
 import React from "react";
-import Css from "./CSS/Css";
+// import Css from "./CSS/Css";
+import Mainprops from "./Props/Mainprops";
 // import Classcompo from "./Compoenet/Classcompo";
 // import Funcompo from "./Compoenet/Funcompo";
 // import Hello from "./Jsx/Hello";
@@ -16,8 +17,11 @@ function App() {
             {/* JSX compoent */}
             {/* <Hello /> */}
 
-            <Css />
+            {/* <Css /> */}
 
+
+            {/* Props */}
+            <Mainprops />
         </div>
     )
 }
