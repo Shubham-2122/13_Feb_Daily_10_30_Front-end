@@ -1,9 +1,10 @@
 import React from "react";
 // import Css from "./CSS/Css";
-import Mainprops from "./Props/Mainprops";
+// import Mainprops from "./Props/Mainprops";
 // import Classcompo from "./Compoenet/Classcompo";
 // import Funcompo from "./Compoenet/Funcompo";
 // import Hello from "./Jsx/Hello";
+import Mainstate from "./State/Mainstate";
 
 function App() {
     return (
@@ -21,7 +22,10 @@ function App() {
 
 
             {/* Props */}
-            <Mainprops />
+            {/* <Mainprops /> */}
+
+            {/* state :-  */}
+            <Mainstate />
         </div>
     )
 }
