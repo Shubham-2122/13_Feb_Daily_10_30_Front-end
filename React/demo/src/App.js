@@ -4,7 +4,9 @@ import React from "react";
 // import Classcompo from "./Compoenet/Classcompo";
 // import Funcompo from "./Compoenet/Funcompo";
 // import Hello from "./Jsx/Hello";
-import Mainstate from "./State/Mainstate";
+// import Mainstate from "./State/Mainstate";
+// import Formhadling from "./Form_hadnlig/Formhadling";
+import Formhadlingobj from "./Form_hadnlig/Formhadlingobj";
 
 function App() {
     return (
@@ -25,7 +27,10 @@ function App() {
             {/* <Mainprops /> */}
 
             {/* state :-  */}
-            <Mainstate />
+            {/* <Mainstate /> */}
+
+            {/* <Formhadling /> */}
+            <Formhadlingobj />
         </div>
     )
 }
