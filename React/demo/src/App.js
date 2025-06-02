@@ -10,6 +10,7 @@ import React from "react";
 // import Useeffect from "./UseEffect/Useeffect";
 import UseTable from "./UseEffect/UseTable";
 import Table from "./UseEffect/Table";
+import UseCard from "./UseEffect/UseCard";
 
 function App() {
     return (
@@ -38,7 +39,8 @@ function App() {
             {/* use effcet */}
             {/* <Useeffect /> */}
             {/* <UseTable /> */}
-            <Table />
+            {/* <Table /> */}
+            <UseCard />
         </div>
     )
 }

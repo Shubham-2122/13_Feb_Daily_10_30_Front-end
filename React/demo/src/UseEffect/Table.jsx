@@ -31,7 +31,7 @@ function Table() {
                    {
                      data && data.map((user,index)=>{
                         return(
-                            <tr>
+                            <tr key={index}>
                                     <th scope="row">{user.id}</th>
                                     <td>{user.name}</td>
                                     <td>{user.email}</td>
