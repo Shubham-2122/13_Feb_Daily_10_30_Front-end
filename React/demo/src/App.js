@@ -8,9 +8,10 @@ import React from "react";
 // import Formhadling from "./Form_hadnlig/Formhadling";
 // import Formhadlingobj from "./Form_hadnlig/Formhadlingobj";
 // import Useeffect from "./UseEffect/Useeffect";
-import UseTable from "./UseEffect/UseTable";
-import Table from "./UseEffect/Table";
-import UseCard from "./UseEffect/UseCard";
+// import UseTable from "./UseEffect/UseTable";
+// import Table from "./UseEffect/Table";
+// import UseCard from "./UseEffect/UseCard";
+import Maincontext from "./context/Maincontext";
 
 function App() {
     return (
@@ -40,7 +41,9 @@ function App() {
             {/* <Useeffect /> */}
             {/* <UseTable /> */}
             {/* <Table /> */}
-            <UseCard />
+            {/* <UseCard /> */}
+
+            <Maincontext />
         </div>
     )
 }
