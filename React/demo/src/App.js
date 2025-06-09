@@ -1,4 +1,6 @@
 import React from "react";
+import Reactcard from "./Frmework/Reactcard";
+import Footer from "./Frmework/Footer";
 // import Css from "./CSS/Css";
 // import Mainprops from "./Props/Mainprops";
 // import Classcompo from "./Compoenet/Classcompo";
@@ -11,7 +13,8 @@ import React from "react";
 // import UseTable from "./UseEffect/UseTable";
 // import Table from "./UseEffect/Table";
 // import UseCard from "./UseEffect/UseCard";
-import Maincontext from "./context/Maincontext";
+// import Maincontext from "./context/Maincontext";
+// import Navabar from "./Frmework/Navabar";
 
 function App() {
     return (
@@ -43,7 +46,13 @@ function App() {
             {/* <Table /> */}
             {/* <UseCard /> */}
 
-            <Maincontext />
+            {/* <Maincontext /> */}
+
+            {/* fraework */}
+            {/* <Navabar /> */}
+            <Reactcard />
+            <Footer />
+
         </div>
     )
 }

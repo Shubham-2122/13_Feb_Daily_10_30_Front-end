@@ -3,7 +3,7 @@ import { data } from './ChaildA'
 
 function ChaildB() {
 
-    const {count,setcount} = useContext(data)
+  const {count,setcount} = useContext(data)
 
   return (
     <div>
