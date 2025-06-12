@@ -14,46 +14,73 @@ import Footer from "./Frmework/Footer";
 // import Table from "./UseEffect/Table";
 // import UseCard from "./UseEffect/UseCard";
 // import Maincontext from "./context/Maincontext";
-// import Navabar from "./Frmework/Navabar";
+import Navabar from "./Frmework/Navabar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./layout/pages/Home";
+import About from "./layout/pages/About";
+import Contact from "./layout/pages/Contact";
+import About1 from "./layout/pages/About1";
+import About2 from "./layout/pages/About2";
+import Help from "./layout/pages/Help";
+import NotFound from "./layout/pages/NotFound";
+import Life from "./Lifecycle/Life";
 
 function App() {
     return (
-        <div>
-            <h1>Hello This App </h1>
+        <BrowserRouter>
+            <div>
+                {/* <h1>Hello This App </h1> */}
 
-            {/* Component */}
-            {/* <Classcompo /> */}
-            {/* <Funcompo /> */}
+                {/* Component */}
+                {/* <Classcompo /> */}
+                {/* <Funcompo /> */}
 
-            {/* JSX compoent */}
-            {/* <Hello /> */}
+                {/* JSX compoent */}
+                {/* <Hello /> */}
 
-            {/* <Css /> */}
+                {/* <Css /> */}
 
 
-            {/* Props */}
-            {/* <Mainprops /> */}
+                {/* Props */}
+                {/* <Mainprops /> */}
 
-            {/* state :-  */}
-            {/* <Mainstate /> */}
+                {/* state :-  */}
+                {/* <Mainstate /> */}
 
-            {/* <Formhadling /> */}
-            {/* <Formhadlingobj /> */}
-            
-            {/* use effcet */}
-            {/* <Useeffect /> */}
-            {/* <UseTable /> */}
-            {/* <Table /> */}
-            {/* <UseCard /> */}
+                {/* <Formhadling /> */}
+                {/* <Formhadlingobj /> */}
 
-            {/* <Maincontext /> */}
+                {/* use effcet */}
+                {/* <Useeffect /> */}
+                {/* <UseTable /> */}
+                {/* <Table /> */}
+                {/* <UseCard /> */}
 
-            {/* fraework */}
-            {/* <Navabar /> */}
-            <Reactcard />
-            <Footer />
+                {/* <Maincontext /> */}
 
-        </div>
+                {/* fraework */}
+                {/* <Navabar /> */}
+                {/* <Reactcard /> */}
+                {/* <Footer /> */}
+
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} >
+                        <Route path="about1" element={<About1 />} />
+                        <Route path="about2" element={<About2 />} />
+                    </Route>
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/help" element={<Help />} />
+                    <Route path="/life" element={<Life />} />
+
+
+                    {/* not found data  */}
+                    <Route path="*" element={<NotFound />} />
+
+                </Routes>
+
+            </div>
+        </BrowserRouter>
     )
 }
 
