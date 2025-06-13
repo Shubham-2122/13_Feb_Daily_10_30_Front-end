@@ -24,6 +24,8 @@ import About2 from "./layout/pages/About2";
 import Help from "./layout/pages/Help";
 import NotFound from "./layout/pages/NotFound";
 import Life from "./Lifecycle/Life";
+import Usered from "./Hooks/Usered";
+import Useref from "./Hooks/Useref";
 
 function App() {
     return (
@@ -72,6 +74,8 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/help" element={<Help />} />
                     <Route path="/life" element={<Life />} />
+                    <Route path="/red" element={<Usered />} />
+                    <Route path="/data" element={<Useref />} />
 
 
                     {/* not found data  */}
