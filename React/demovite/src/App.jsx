@@ -5,6 +5,9 @@ import Back from "./tailwind/Back"
 import Border from "./tailwind/Border"
 import Images from "./tailwind/Images"
 import Custom from "./tailwind/Custom"
+import Flex from "./tailwind/Flex"
+import Grid from "./tailwind/Grid"
+import Data from "./tailwind/Data"
 
 function App() {
 
@@ -17,7 +20,10 @@ function App() {
        {/* <Back /> */}
        {/* <Border /> */}
        {/* <Images /> */}
-       <Custom />
+       {/* <Custom /> */}
+       {/* <Flex /> */}
+       {/* <Grid /> */}
+       <Data />
     </>
     
    
