@@ -1,0 +1,54 @@
+{
+    "admin": [
+        {
+            "id": 1,
+            "name": "Admin",
+            "email": "admin@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "user1",
+            "email": "user@gmail.com",
+            "password": "1234",
+            "status": "unblock"
+        },
+        {
+            "id": 2,
+            "name": "user2",
+            "email": "user2@gmail.com",
+            "password": "123456",
+            "status": "block"
+        }
+    ],
+    "services": [
+        {
+            "id": "1",
+            "title": "Job Visa",
+            "img": "https://images.pexels.com/photos/32670003/pexels-photo-32670003.jpeg?_gl=1*4f4745*_ga*OTU1MjcwNDkxLjE3MzIzNTYwNzI.*_ga_8JE65Q40S6*czE3NTA2NTc0ODEkbzExNCRnMSR0MTc1MDY1NzUxNyRqMjQkbDAkaDA.",
+            "desc": "Hello this Job visa"
+        },
+        {
+            "id": "2",
+            "title": "Student Visa",
+            "img": "https://images.pexels.com/photos/4126749/pexels-photo-4126749.jpeg?_gl=1*5c2mwy*_ga*OTU1MjcwNDkxLjE3MzIzNTYwNzI.*_ga_8JE65Q40S6*czE3NTA2NTc0ODEkbzExNCRnMSR0MTc1MDY1NzU4NSRqNDUkbDAkaDA.",
+            "desc": "Hello this Job visa"
+        }
+    ],
+    "training":[
+        {
+            "id":"1",
+            "title":"IELTS Triainig",
+            "desc":"Hello English trian",
+            "img":"https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?_gl=1*z0e84o*_ga*OTU1MjcwNDkxLjE3MzIzNTYwNzI.*_ga_8JE65Q40S6*czE3NTA2NTc0ODEkbzExNCRnMSR0MTc1MDY1NzgxMCRqNDUkbDAkaDA."
+        },
+         {
+            "id":"2",
+            "title":"PTE Triainig",
+            "desc":"Hello English trian PTE",
+            "img":"https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?_gl=1*54f6cj*_ga*OTU1MjcwNDkxLjE3MzIzNTYwNzI.*_ga_8JE65Q40S6*czE3NTA2NTc0ODEkbzExNCRnMSR0MTc1MDY1Nzg0NCRqMTEkbDAkaDA."
+        }
+    ]
+}
