@@ -12,12 +12,14 @@ import Triaining from "./Website/Pages/Triaining";
 import Dashboard from "./Admin/Apages/Dashboard";
 import ServiceManage from "./Admin/Apages/ServiceManage";
 import TriningManage from "./Admin/Apages/TriningManage";
-
+import ServiceAdd from "./Admin/Apages/ServiceAdd";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ToastContainer />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -35,6 +37,8 @@ function App() {
           <Route path="/dash" element={<Dashboard />} />
           <Route path="/serviceManage" element={<ServiceManage />} />
           <Route path="/triningManage" element={<TriningManage />} />
+          <Route path="/serviceadd" element={<ServiceAdd />} />
+
         </Routes>
       </div>
     </BrowserRouter>
