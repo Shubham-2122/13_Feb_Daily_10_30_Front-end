@@ -14,6 +14,7 @@ import ServiceManage from "./Admin/Apages/ServiceManage";
 import TriningManage from "./Admin/Apages/TriningManage";
 import ServiceAdd from "./Admin/Apages/ServiceAdd";
 import { ToastContainer } from 'react-toastify';
+import Alogin from "./Admin/Apages/Alogin";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/serviceManage" element={<ServiceManage />} />
           <Route path="/triningManage" element={<TriningManage />} />
           <Route path="/serviceadd" element={<ServiceAdd />} />
+          <Route path="/alogin" element={<Alogin />} />
 
         </Routes>
       </div>

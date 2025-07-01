@@ -1,7 +1,24 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function AHeader() {
+
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Aid")){
+            redirect("/alogin")
+        }
+    })
+
+    const logout=()=>{
+        localStorage.removeItem("Aid")
+        localStorage.removeItem("Aname")
+        redirect("/alogin")
+        toast.success("Logout successfully..!")
+    }
+
   return (
     <div>
       <div>
@@ -64,10 +81,35 @@ function AHeader() {
                                 
                                     </div>
                                 </div>
+                                {(()=>{
+                                    if(localStorage.getItem("Aid")){
+                                        return(
+                                            <>
+                                                <Link className="nav-item nav-link">hello.. {localStorage.getItem("Aname")}</Link>
+                                            </>
+                                        )
+                                    }
+                                })()}
+
+                                {(()=>{
+                                    if(localStorage.getItem("Aid")){
+                                        return(
+                                            <>
+                                                <Link onClick={logout} className="nav-item nav-link">Logout</Link>
+                                            </>
+                                        )
+                                    }
+                                    else{
+                                        return(
+                                            <>
+                                                <Link to="/alogin" className="nav-item nav-link">Alogin</Link>
+                                            </>
+                                        )
+                                    }
+                                })()}
                          
                             </div>
-                            <button className="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search" /></button>
-                            <a href className="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
+                           
                         </div>
                     </nav>
                 </div>
