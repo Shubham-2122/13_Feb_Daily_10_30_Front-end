@@ -15,6 +15,8 @@ import TriningManage from "./Admin/Apages/TriningManage";
 import ServiceAdd from "./Admin/Apages/ServiceAdd";
 import { ToastContainer } from 'react-toastify';
 import Alogin from "./Admin/Apages/Alogin";
+import Login from "./Website/Pages/Login";
+import Register from "./Website/Pages/Register";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path="/test" element={<Testimonial />} />
           <Route path="/trian" element={<Triaining />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/newdata" element={<Register />} />
 
 
           <Route path="*" element={<NotFound />} />

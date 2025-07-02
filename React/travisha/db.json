@@ -6,7 +6,7 @@
       "email": "admin@gmail.com",
       "password": "1234"
     },
-      {
+    {
       "id": "2",
       "name": "Subadmin",
       "email": "subadmin@gmail.com",
@@ -27,6 +27,13 @@
       "email": "user2@gmail.com",
       "password": "123456",
       "status": "block"
+    },
+    {
+      "id": "1751435054376",
+      "name": "manav",
+      "email": "manav@gmail.com",
+      "password": "123456",
+      "status": "unblock"
     }
   ],
   "services": [
