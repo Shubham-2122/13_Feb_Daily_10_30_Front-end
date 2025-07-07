@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment, zero } from './countSlice'
 
 function Count() {
+  // store name.inist
 
     const count = useSelector((state)=>state.count.value)
 
