@@ -1,28 +1,22 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "manav",
-      "email": "manav@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "2",
-      "name": "Pintu",
-      "email": "Pintu@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": "3",
-      "name": "uattam",
-      "email": "uattam@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "1751955496025",
-      "name": "het patel",
+      "id": "1752038632640",
+      "name": "hello",
       "email": "het@gmail.com",
-      "password": "12345"
+      "password": "12312ss"
+    },
+    {
+      "id": "1752038637560",
+      "name": "sujal",
+      "email": "shubhamjadav.tops@gmail.com",
+      "password": "asd"
+    },
+    {
+      "id": "1752038779317",
+      "name": "manav",
+      "email": "harsh@gmail.com",
+      "password": "asdasasd"
     }
   ],
   "admin": [
